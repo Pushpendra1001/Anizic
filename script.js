@@ -7,10 +7,22 @@ const scroll = new LocomotiveScroll({
 
 
 // gsap
+
+var tl = gsap.timeline();
+
+tl.to("#loader" , {
+    opacity : 0,
+    delay : 3.7,
+    duration : 0.4,
+    z : "10"
+})
+
+
 gsap.from(".a-tag-link", {
     stagger: .1,
-    delay: 0.1,
+    delay: 3.8,
     y: 10,
+
     duration: 0.8,
     ease: Power2,
     opacity: 0,
@@ -21,10 +33,15 @@ gsap.from(".a-tag-link", {
 gsap.from(".home-animate",{
     y : 50,
     duration : 1 , 
-    delay : 0.1 , 
+    delay : 3.8, 
     stagger : .4 ,
     ease : Expo,
 })
+
+tl.to("#loader",{
+    display: "none"
+})
+
 
 
 
@@ -97,3 +114,39 @@ document.querySelector("#futuretxt").addEventListener("mouseleave",function()
         duration : 1,
     })
 });
+
+
+
+// loader
+
+var count_txt = document.querySelector("#counter");
+
+var grow =0;
+
+setInterval(() => {
+    if(grow > 100){
+        count_txt.innerHTML = 100;
+    }
+    else if(grow <= 100){
+        count_txt.innerHTML = grow++;
+    }
+
+}, 25);
+
+
+
+
+// my-mouse 
+
+var body = document.querySelector("body");
+
+var my_cursor = document.querySelector("#my-cursor");
+
+body.addEventListener("mousemove" , function(axi){
+    var x = axi.clientX;
+    var y = axi.clientY;
+
+    my_cursor.style.left = x + "px";
+    my_cursor.style.top = y + "px";
+})
+
