@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    
+<link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    
+    <link  href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> 
+    <link rel="stylesheet"  href="style.css">
+
+</head>
+<body>
+ <div id="main">
+       
+  <nav>
+    <div id="nav" class="flex px-20 py-10 bold text-md justify-between relative ">
+        <div id="nav-left" >
+            <a  class="a-tag-link px-3" href="#">Home</a>
+            <a  class="a-tag-link px-3" href="#">Pricing</a>
+            <a  class="a-tag-link px-3" href="#">Projects</a>
+        </div>
+        
+        <div id="nav-mid" >
+            <a class="a-tag-link" href="#">Anizic</a>
+        </div>
+
+        <div id="nav-right">
+            <a class="a-tag-link" href="#">My Journey</a>
+        </div>
+    </div>
+  </nav>
+
+
+  <div id="hero" class=" w-full flex justify-between  items-center     px-20 mt-40">
+
+    <div  id="sustainabilitywrapper" class="home-animate img-effect" >
+        <h4 class="font-bold" >01.</h4>
+        <h3 class="font-bold">Sustainability</h3>
+        <p class="text-sm leading-4 pb-3 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit?</p>
+        <img src="/images/pinkgreenplant.jpg" alt="">
+    </div>
+
+    <div  id="ephemeral" class="home-animate h-[38vw] w-[28vw] relative  ">
+        <div id="heading" class="text-[6vw] absolute top-[-20%] left-[-28%] leading-none font-bold">
+            <h1>Ephemeral</h1>
+            <h1>Equilibrium.</h1>
+        </div>
+
+        <img src="/images/pinkplant.jpg" alt="">
+
+       <p class="w-[50%] pt-2 text-md ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div  id="visit" class="home-animate flex items-center">
+        <i class="ri-arrow-down-line border-2 border-black  rounded-full  h-[50px] w-[50px] items-center flex justify-center font-bold text-xl"></i>
+        <h3 class="pl-2">Visit our gallery</h3>
+    </div>
+
+  </div>
+
+  
+  
+  <div id="motive" class=" mt-40 px-20 text-md ">
+      <h2 class="opacity-[.5] text-[1.4vw]">OUR MOTIVE</h2>
+
+     <div id="right-shift" class="mt-2 ">
+        <p  class="text-[2vw]   items-center   mt-2 text-[2vw] text-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore cum similique<span id="span1"></span> dolorem, nemo  perspiciatis temporibus molestiae possimus<span id="span2"></span> ullam Lorem ipsum dolor sit amet consectetur <span id="span3"></span> adipisicing elit. Aliquid natus itaque  dolor saepe repellat quos deleniti. Aliquam voluptatem obcaecati nisi. .</p>
+    
+        <div id="img_col" class="h-[80vh] w-full mt-40  flex justify-between ">
+    
+            <div id="synergy" class="img-effect h-[20vw] pl-20 w-[23vw]">
+                <img class="h-[100%] w-[100%] object-cover" src="/images/sea.jpg" alt="">
+    
+                <h2 class="font-bold mt-4 text-xl">Synergy</h2>
+    
+                <p class=" text-[1vw]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, magni!</p>
+            </div>
+            <div id="harmoney" class="img-effect [40vw] w-[30vw] ">
+                <img class="h-[100%] w-[100%]" src="/images/cloud.jpg" alt="">
+                
+                <h2 class="text-right font-semibold  text-xl mt-4">Harmony</h2>
+                <p class="text-right text-[1vw] ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, accusantium.</p>
+            </div>
+        </div>
+     </div>
+    </div>
+
+
+    <div id="packaging" class="flex  mt-40 w-full items-center ">
+        
+        <div id="bottle-img" class="h-[70vh] w-[70%] ">
+            <img class=" h-[100%] w-[100%] object-cover " src="/images/bottle.jpg" alt="">
+            <img class=" h-[100%] w-[100%]    object-cover  " src="/images/bottle2.jpg" alt="">
+
+        </div>
+
+        
+        <div id="packaging-content" class="p-8 h-[70vh] w-[30%] flex flex-col justify-center" >
+            <h3 class="font-semibold leading-6 text-[2vw] ">Biodegradable</h3>
+            <h3 class="font-semibold leading-6  text-[2vw] ">Packaging</h3>
+            <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, excepturi?</p>
+        </div>
+
+
+
+    </div>
+
+
+    <div id="think-of-future" class="h-[100vh] w-full flex justify-center flex-col items-center">
+        <video src="/images/back.mp4" muted loop autoplay  ></video>
+        <div id="futuretxt" >
+            
+            <h2 class="font-bold text-[2vw]">think of future</h2>
+            <button class="btn mt-2 border-2 border-black rounded-full p-4 bg-[#d6d6d6] ">Join the movement</button>
+        </div>
+    </div>
+    
+    
+
+</div>
+    <!-- js -->
+
+    <!--  Gsap is needed for Basic Effects -->
+
+<!-- Scroll Trigger  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Three.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+  
+<!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- locomotive scrolling -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
